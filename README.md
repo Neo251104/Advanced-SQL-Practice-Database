@@ -12,7 +12,7 @@ Work_Experience	Work history	experience_id, applicant_id, company, position, dur
 Status_History	Applicant status changes over time	history_id, applicant_id, status, change_date
 
 # Quick Start
-Create Database:
+## Create Database:
 
 sql
 CREATE DATABASE ApplicantTracking;
@@ -21,7 +21,7 @@ Run CREATE TABLE statements (in order from provided script)
 
 Insert Sample Data (all INSERT statements provided)
 
-Verify Setup:
+## Verify Setup:
 
 sql
 -- Check all tables loaded
@@ -55,7 +55,7 @@ Fix inconsistent name formatting (mixed case issues).
 ## Problem 5: Performance Optimization
 Rewrite inefficient queries using proper indexes and join strategies.
 
-Sample Solution: Window Functions
+## Sample Solution: Window Functions
 sql
 -- Rank applicants by marks in their city
 SELECT 
@@ -68,14 +68,14 @@ SELECT
 FROM Applicants
 JOIN Universities ON Applicants.university_id = Universities.university_id;
 
-Business Use Cases
+## Business Use Cases
 1. Talent Analytics: Identify top candidates by multiple criteria
 2. University Performance: Compare graduate quality across institutions
 3. Skill Gap Analysis: Find missing skills in applicant pool
 4. Hiring Pipeline: Track applicant progression through stages
 5. Diversity Metrics: Analyze applicant demographics and origins
 
-Data Quality Issues (Intentional)
+## Data Quality Issues (Intentional)
 - This dataset includes real-world problems to practice data cleaning:
 - Inconsistent name casing ('thando' vs 'SIPHO')
 - Mixed date formats
@@ -83,18 +83,18 @@ Data Quality Issues (Intentional)
 - Inconsistent phone number formatting
 - Duplicate or conflicting skill entries
 
-Learning Tips
+## Learning Tips
 - Start Simple: Master basic queries before advanced functions
 - Test Incrementally: Build complex queries step by step
 - Explain Your Queries: Use comments to document logic
 - Compare Performance: Try different approaches to the same problem
 - Use Real Data: Apply these techniques to your own projects
 
-Resources
-SQL Server Documentation
-Mode Analytics SQL Tutorial
-LeetCode SQL Problems
-SQLZoo Interactive Practice
+## Resources
+- SQL Server Documentation
+- Mode Analytics SQL Tutorial
+- LeetCode SQL Problems
+- SQLZoo Interactive Practice
 
 
 
