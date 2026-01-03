@@ -1,7 +1,7 @@
 # Advanced-SQL-Practice-Database
 A comprehensive set of SQL tables, sample data, and practice queries designed for learning advanced SQL concepts including window functions, CTEs, complex joins, and query optimization.
 
-Database Schema
+# Database Schema
 Core Tables
 Table Name	Description	Key Columns
 Applicants	Main applicant information	applicant_id, first_name, last_name, final_marks, status
@@ -11,7 +11,7 @@ Projects	Project portfolio items	project_id, applicant_id, project_name, project
 Work_Experience	Work history	experience_id, applicant_id, company, position, duration_months
 Status_History	Applicant status changes over time	history_id, applicant_id, status, change_date
 
-Quick Start
+# Quick Start
 Create Database:
 
 sql
@@ -32,27 +32,27 @@ UNION ALL SELECT 'Projects', COUNT(*) FROM Projects
 UNION ALL SELECT 'Work_Experience', COUNT(*) FROM Work_Experience
 UNION ALL SELECT 'Status_History', COUNT(*) FROM Status_History;
 
-Learning Objectives
+# Learning Objectives
 Beginner → Intermediate → Advanced
 Level	Focus	Example Queries
 Beginner	Basic SELECT, WHERE, GROUP BY	Find all applicants from UCT with marks > 70%
 Intermediate	JOINs, subqueries, aggregations	Applicants with projects and work experience
 Advanced	Window functions, CTEs, optimization	Rank applicants within universities, running totals
 
-Practice Problems
+# Practice Problems
 Problem 1: Window Functions - Ranking
 Rank applicants within their city by final marks, showing top 3 from each city.
 
-Problem 2: CTEs - Multi-step Analysis
+## Problem 2: CTEs - Multi-step Analysis
 Find applicants with above-average technical skills for their university.
 
-Problem 3: Complex Joins - Full Profiles
+## Problem 3: Complex Joins - Full Profiles
 Create a comprehensive applicant profile with marks, skills count, projects count, and total work experience.
 
-Problem 4: Data Cleaning
+## Problem 4: Data Cleaning
 Fix inconsistent name formatting (mixed case issues).
 
-Problem 5: Performance Optimization
+## Problem 5: Performance Optimization
 Rewrite inefficient queries using proper indexes and join strategies.
 
 Sample Solution: Window Functions
