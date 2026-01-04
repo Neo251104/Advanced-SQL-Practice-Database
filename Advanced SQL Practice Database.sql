@@ -1,5 +1,5 @@
-CREATE DATABASE UniDB;
-USE UniDB;
+CREATE DATABASE ApplicantsDB;
+USE ApplicantsDB;
 
 CREATE TABLE Applicants (
     applicant_id INT PRIMARY KEY,
